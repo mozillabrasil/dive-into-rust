@@ -1,0 +1,6 @@
+[package]
+name = "ex2"
+version = "0.1.0"
+authors = ["leonardo.yvens <leoyvens@gmail.com>"]
+
+[dependencies]

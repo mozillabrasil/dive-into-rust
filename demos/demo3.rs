@@ -1,7 +1,7 @@
 fn main() {
     let x = 1;
     let mut y = x;
-    y = y + 1;
+    y += 1;
     println!("x continua {}, y agora é {}", x, y);
 
     let s = String::from("oi");
@@ -20,8 +20,8 @@ fn main() {
     let pedaco : &str = &t[1..5];
     println!("{}", pedaco);
 
-    // grita_educadamente(&mut t);
-    // grita(t);
+    // grita_educadamente(&mut t); // uso de valor emprestado.
+    // grita(t); // uso de valor emprestado.
 }
 
 fn grita_educadamente(string : &mut String) {
