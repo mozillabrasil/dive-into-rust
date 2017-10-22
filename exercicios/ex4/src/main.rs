@@ -18,5 +18,3 @@ fn main() {
 // Exercicio 3: Faça um construtor `new_rect` para criar um retangulo.
 
 // Exercicio 4: Faça um método `rect_area` para calcular a area de um retangulo.
-
-// Desafio: Faça um método que verifica se um retangulo intersecta outro.
