@@ -6,7 +6,7 @@ fn main() {
 /// exceto em anos múltiplos de 100 que não são múltiplos de 400.
 /// Retorne `true` se `year` é bissexto e `false` caso contrário.
 fn is_leap_year(year: i32) -> bool {
-    
+    false
 }
 
 

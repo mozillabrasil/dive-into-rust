@@ -1,39 +1,31 @@
 fn main() {
     // Declaracao de variaveis.
     let um = 1;
-    let mentira = false;
-    println!("Um é: {}", um);
-    println!("Olha a cobra: {}", mentira);
-
-    // Tipos explicitos.
-    let dois: i32 = 2;
-    let verdade: bool = true;
-    // Expressoes.
-    println!("Um mais dois é: {}", um + dois);
-    println!("verdade é verdadeiro: {}", verdade == true);
+    let mentira: bool = false;
+    println!("Um é: {}. Mentira é: {}", um, mentira);
 
     // if
     let n = 10;
     if n % 2 == 0 {
-        println!("é par");
+        println!("par");
     } else {
-        println!("é ímpar");
+        println!("ímpar");
     }
 
     // mut
     let mut mensagem;
     if n % 2 == 0 {
-        mensagem = "é par";
+        mensagem = "par";
     } else {
-        mensagem = "é impar";
+        mensagem = "impar";
     }
     println!("o numero {} é {}", n, mensagem);
     
     // if como expressao
     mensagem = if n % 2 == 0 {
-        "é par"
+        "par"
     } else {
-        "é impar"
+        "impar"
     };
     println!("o numero {} é {}", n, mensagem);
 
