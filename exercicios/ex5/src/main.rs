@@ -13,9 +13,9 @@ enum Status {
 // Exercicio 1: Defina o enum escolaridade.
 
 impl Pessoa {
-    fn conjugue(&self) -> Option<String> {
+    fn conjuge(&self) -> Option<String> {
         match self.estado_civil {
-            Status::Casado(ref conjugue) => Some(conjugue.clone()),
+            Status::Casado(ref conjuge) => Some(conjuge.clone()),
             _ => None
         }
     }

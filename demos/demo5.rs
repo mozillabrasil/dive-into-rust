@@ -31,7 +31,7 @@ impl Bicicleta {
         Bicicleta { tipo: Tipo::Eletrica(watts), ..Bicicleta::new() }
     }
 
-    fn radical(&self) -> bool {
+    fn is_radical(&self) -> bool {
         self.tipo.radical();
         // Ou
         use Tipo::*;
@@ -41,9 +41,21 @@ impl Bicicleta {
             Eletrica(w) => w > 2000
         }
     }
+
+    fn radical(&self) -> Option<Bicicleta> {
+        if (self.tipo.radical()) {
+            Some(self.clone())
+        } else {
+            None
+        }
+    }
 }
 
 fn main() {
     let bike_eletrica = Bicicleta::eletrica(1000);
     println!("Essa bike é radical? {}", bike_eletrica.radical());
+    match radical {
+        Some(bike) => println!(" bike radical: {:?}", bike),
+        None =>println!("Bike não radical"),
+    }
 }
