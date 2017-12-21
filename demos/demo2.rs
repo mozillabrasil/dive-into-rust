@@ -20,7 +20,7 @@ fn main() {
         canta(contagem);
     }
 
-    let vetor = vec![1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let vetor = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     for n in vetor {
         canta(n);
     }
