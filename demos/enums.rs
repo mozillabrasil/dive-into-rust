@@ -1,3 +1,4 @@
+#[derive(Debug, Clone)]
 enum Tipo {
     Normal,
     Mountain,
@@ -16,6 +17,7 @@ impl Tipo {
     }
 }
 
+#[derive(Debug, Clone)]
 struct Bicicleta {
     marcha : u32,
     andando : bool,
@@ -42,9 +44,9 @@ impl Bicicleta {
         }
     }
 
-    fn radical(&self) -> Option<Bicicleta> {
-        if (self.tipo.radical()) {
-            Some(self.clone())
+    fn radical(self) -> Option<Bicicleta> {
+        if self.tipo.radical() {
+            Some(self)
         } else {
             None
         }
@@ -53,8 +55,8 @@ impl Bicicleta {
 
 fn main() {
     let bike_eletrica = Bicicleta::eletrica(1000);
-    println!("Essa bike é radical? {}", bike_eletrica.radical());
-    match radical {
+    println!("Essa bike é radical? {:?}", bike_eletrica.is_radical());
+    match bike_eletrica.radical() {
         Some(bike) => println!(" bike radical: {:?}", bike),
         None =>println!("Bike não radical"),
     }
