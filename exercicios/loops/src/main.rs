@@ -14,6 +14,21 @@ fn collatz(mut x: u32) -> u32 {
 // Testes
 
 #[test]
+fn test_0() {
+    assert_eq!(collatz(0), 0);
+}
+
+#[test]
+fn test_1() {
+    assert_eq!(collatz(1), 0);
+}
+
+#[test]
+fn test_2() {
+    assert_eq!(collatz(2), 1);
+}
+
+#[test]
 fn test_9() {
     assert_eq!(collatz(9), 19);
 }
